@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Inicio - Plantilla Bootstrap Maundy</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Estilo para poner la imagen de fondo y asegurar visibilidad de la galería -->
+  <style>
+    body {
+      background-image: url('assets/img/mañana.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    /* Estilo personalizado para forzar que el carrusel se vea perfecto con fondo translúcido */
+    .carousel-item img {
+      height: 480px !important;
+      object-fit: cover !important;
+      border-radius: 12px;
+    }
+    .galeria-box {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 15px;
+      backdrop-filter: blur(5px);
+    }
+  </style>
+</head>
+<body class="index-page">
+  <header id="header" class="header d-flex align-items-center px-3 fixed-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">OMAR COURTZ</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Inicio</a></li>
+          <li><a href="#about">¿Que nos espera?</a></li>
+          <li><a href="#galeria">Fotos</a></li>
+          <li><a href="#contact">Contactanos</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <!-- Sección Hero -->
+    <section id="hero" class="hero section transparent-background">
+      <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2>por si mañana no estoy<br></h2>
+            <p>Por que todos lo pedimos</p>
+          </div>
+          <div class="countdown d-flex justify-content-center" data-count="2026/11/08">
+            <div>
+              <h3 class="count-days">97</h3>
+              <h4>Días</h4>
+            </div>
+            <div>
+              <h3 class="count-hours">10</h3>
+              <h4>Horas</h4>
+            </div>
+            <div>
+              <h3 class="count-minutes">40</h3>
+              <h4>Minutos</h4>
+            </div>
+            <div>
+              <h3 class="count-seconds">21</h3>
+              <h4>Segundos</h4>
+            </div>
+          </div>
+          <div class="col-lg-5 hero-newsletter">
+            <p>¡Proximo albun del Ousi! Ahora con un ritmo que todos esperabamos poder tener en nuestras playlist.</p>
+            <form action="forms/newsletter.php" method="post" class="php-email-form">
+              <div class="newsletter-form"><input type="email" name="email" placeholder="Tu correo electrónico"><input type="submit" value="Suscribirse"></div>
+              <div class="loading">Cargando</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Tu solicitud de suscripción ha sido enviada. ¡Gracias!</div>
+            </form>
+          </div>
+          <div class="social-links">
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Sección Hero -->
+
+    <!-- Sección Acerca de -->
+    <section id="about" class="about section transparent-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>¿Que nos espera?</h2>
+        <p>Este pretende ser un albun que enloquesca a los fans, sin dejar de lado ese ritmo romantico que nos encanta.</p>
+      </div>
+      <div class="container">
+        <div class="row gy-5">
+          <div class="content col-xl-5 d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
+            <h3>Informate con nosotros</h3>
+            <p>Somos fuente oficial de las noticias sobre el proximo lanzamiento del albun de omar courtz. Se acaba la espera, este 08/11/2026 se lanza el nuevo albun de omar courtz.</p>
+          </div>
+          <div class="col-xl-7" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4">
+              <div class="col-md-6 icon-box position-relative">
+                <img src="assets/img/mussa.jpg" alt="Primera Musa" style="width: 50px; height: 50px; object-fit: cover; border-radius: 50%; margin-bottom: 15px;">
+                <h4><a href="" class="stretched-link">Primera Musa</a></h4>
+                <p>si primera musa te encanto, espera a ver lo que se viene con todas las canciones que se aproximan.</p>
+              </div>
+              <div class="col-md-6 icon-box position-relative">
+                <img src="assets/img/omar.jpg" alt="Omar Courtz" style="width: 50px; height: 50px; object-fit: cover; border-radius: 50%; margin-bottom: 15px;">
+                <h4><a href="" class="stretched-link">Omar Courtz</a></h4>
+                <p>Omar Courtz. Mas conocido como el Ousi, ya dio un comunicado oficial en sus redes sociales de que saldra un nuevo albun llamado "por si mañana no estoy" y dijo que espera poder conquistar el corazon de todos sus fans.</p>
+              </div>
+              <div class="col-md-6 icon-box position-relative">
+                <img src="assets/img/Spotiffy.jpg" alt="Spotify" style="width: 40px; height: 40px; object-fit: contain; margin-bottom: 15px;">
+                <h4><a href="" class="stretched-link">Albun disponible en Spotify</a></h4>
+                <p>El albun sera lanzado primeramente por Spotify, en el cual se espera tener millones de reproducciones.</p>
+              </div>
+              <div class="col-md-6 icon-box position-relative">
+                <i class="bi bi-mic-fill" style="font-size: 30px; color: var(--accent-color); margin-bottom: 15px; display: inline-block;"></i>
+                <h4><a href="" class="stretched-link">Proximas colaboraciones</a></h4>
+                <p>Uno de los adelantos como posible colaboracion es ROA, Myke Towers. Entre algunos otros que se informaran proximamente.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Sección Acerca de -->
+
+    <!-- SECCIÓN DE GALERÍA Y CARRUSEL CON TUS FOTOS -->
+    <section id="galeria" class="galeria section transparent-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Galería de Fotos</h2>
+        <p>Los mejores momentos y adelantos exclusivos.</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 galeria-box">
+            <!-- Carrusel Bootstrap -->
+            <div id="omarCarousel" class="carousel slide shadow-lg" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#omarCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#omarCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#omarCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <!-- 1. de la rose -->
+                <div class="carousel-item active">
+                  <img src="assets/img/DE LA ROSE.jpeg" class="d-block w-100" alt="De La Rose">
+                  <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-2">
+                    <h5>De La Rose</h5>
+                    <p>Adelanto exclusivo</p>
+                  </div>
+                </div>
+                <!-- 2. la rose -->
+                <div class="carousel-item">
+                  <img src="assets/img/LA ROSE.jpeg" class="d-block w-100" alt="La Rose">
+                  <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-2">
+                    <h5>momentos exclusivos</h5>
+                    <p>Momentos únicos</p>
+                  </div>
+                </div>
+                <!-- 3. rose -->
+                <div class="carousel-item">
+                  <img src="assets/img/ROSE.jpeg" class="d-block w-100" alt="Rose">
+                  <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-2">
+                    <h5>concierto de la rose con omar courtz</h5>
+                    <p>Conexión total con los fans</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Controles -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#omarCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#omarCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Fin Sección Galería -->
+
+    <!-- Sección Contacto -->
+    <section id="contact" class="contact section transparent-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contactanos</h2>
+        <p>Danos tu opinion de como crees que sera este nuevo albun.</p>
+      </div>
+      <div class="container" data-aos="fade" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <div class="info-item d-flex">
+              <i class="bi bi-instagram flex-shrink-0"></i>
+              <div>
+                <h3>Instagram</h3>
+                <p>@omarcourtzfcchile</p>
+              </div>
+            </div>
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Mandanos tu mensaje</h3>
+                <p>+56 9 1789 0621</p>
+              </div>
+            </div>
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Escríbenos</h3>
+                <p>omarcourtzfcchile@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Tu Nombre" required="">
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Tu Correo Electrónico" required="">
+                </div>
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Asunto" required="">
+                </div>
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Mensaje" required=""></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+                  <div class="loading">Cargando</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
+                  <button type="submit">Enviar Mensaje</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Sección Contacto -->
+  </main>
+  <footer id="footer" class="footer transparent-background">
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6">
+          <h4>Síguenos en nuestras redes sociales</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Derechos de Autor</span> <strong class="px-1 sitename">Omar Courtz</strong> <span>Todos los Derechos Reservados</span></p>
+      <div class="credits">
+        Diseñado por <a href="https://bootstrapmade.com/">omarcourtzfcchile</a> | <a href="https://bootstrapmade.com/tools/">Ousi</a>
+      </div>
+    </div>
+  </footer>
+  <!-- Desplazamiento Arriba -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Precargador -->
+  <div id="preloader"></div>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
